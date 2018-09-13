@@ -39,6 +39,7 @@ public class TotalOccurrences extends Configured implements Tool {
     job.setOutputValueClass(IntWritable.class);
 
     job.setMapperClass(Map.class);
+	  //Combiner
     job.setCombinerClass(Reduce.class);
     job.setReducerClass(Reduce.class);
 
