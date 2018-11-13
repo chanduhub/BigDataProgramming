@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SparkDataframe.iml" filepath="$PROJECT_DIR$/.idea/modules/SparkDataframe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkdataframe-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkdataframe-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkgraphframe-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkgraphframe-build.iml" />
+    </modules>
+  </component>
+</project>
