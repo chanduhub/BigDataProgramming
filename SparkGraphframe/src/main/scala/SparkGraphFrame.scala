@@ -67,6 +67,26 @@ object SparkGraphFrame {
 
     print("******************"+vertices.count())
     print("******************************"+vertices.distinct().count())
+    
+    //Q2. Triangle Count
+
+    val traingleCounts = g1.triangleCount.run()
+    traingleCounts.select("id","count").show()
+
+    //Q3. Shortest Path
+    val shortestPath = g1.shortestPaths.landmarks(Seq("MLK Library","Washington at Kearney")).run
+    shortestPath.show()
+
+    //Q4. Page Rank
+
+    val stationPageRank = g1.pageRank.resetProbability(0.15).tol(0.01).run()
+    stationPageRank.vertices.show()
+    stationPageRank.edges.show()
+
+    //Saving to File
+    g1.vertices.write.csv("file/ver")
+
+    g1.edges.write.csv("file/edge")
 
 
 
